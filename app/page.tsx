@@ -388,9 +388,9 @@ export default function AreumdaumExhibition() {
                   />
                 </div>
                 <CardContent className='p-6'>
-                  <Badge variant='secondary' className='mb-2'>
+                  <div className='inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold bg-secondary text-secondary-foreground mb-2'>
                     {item.year}
-                  </Badge>
+                  </div>
                   <h3 className='text-xl font-semibold mb-2'>{item.title}</h3>
                   <p className='text-gray-600 mb-1'>{item.artist}</p>
                   <p className='text-sm text-gray-500'>{item.location}</p>
@@ -420,7 +420,9 @@ export default function AreumdaumExhibition() {
                 <CardContent className='p-6'>
                   <div className='flex flex-col md:flex-row md:items-center justify-between mb-3'>
                     <div className='flex items-center gap-3 mb-2 md:mb-0'>
-                      <Badge variant='outline'>{item.category}</Badge>
+                      <div className='inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold text-foreground'>
+                        {item.category}
+                      </div>
                       <span className='text-sm text-gray-500'>{item.date}</span>
                     </div>
                   </div>
